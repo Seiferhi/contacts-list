@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.body-App{
+  display: flex;
+
+}
+.list-cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cont-item-Contain{
+  text-align: center;
+  width: 30%;
+  border:2px solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
