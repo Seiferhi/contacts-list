@@ -13,7 +13,7 @@ class ModifyContact extends Component {
     }
 
     componentDidMount(){
-        axios.get(`/contact/${this.props.props}`)
+        axios.get(`/contact/${this.props.match.params.id}`)
         .then(res=>{
            this.setState({
             name:res.data.name,
@@ -25,7 +25,7 @@ class ModifyContact extends Component {
         .catch(err=>console.log(err))
     }
     contactUpdate =()=>{
-        axios.put(`/modify-contact/${this.props.props}`,{
+        axios.put(`/modify-contact/${this.props.match.params.idonChan}`,{
             name:this.state.name,
             age:this.state.age,
             email:this.state.email
@@ -35,7 +35,7 @@ class ModifyContact extends Component {
     }
 
     render() {
-        console.log(this.props.props)
+        console.log(this.props.match.params.id)
         return (
             <div className="add-contact-Container">
                <h1>Modify contact</h1>

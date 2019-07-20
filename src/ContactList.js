@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+{import React, { Component } from 'react';
 import ContactItem from './ContactItem'
 import {Link} from 'react-router-dom'
 

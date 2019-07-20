@@ -11,8 +11,9 @@ const Routes = () =>{
         <Route exact path="/" component={Home} />
         <Route exact path="/contacts" component={ContactList} />
         <Route exact path="/addContact" component={Addcontact} />
+        {/*render={(props)=><ModifyContact props={props.match.params.id}/>}*/}
         {/*use render dans la cas que jai des variabla a passe render={(props)=><Modifycontact props={props}/>}*/ }
-        <Route exact path="/modifycontact/:id" render={(props)=><ModifyContact props={props.match.params.id}/>} />
+        <Route exact path="/modifycontact/:id" component={ModifyContact}/> />
         </div>
     )
 }

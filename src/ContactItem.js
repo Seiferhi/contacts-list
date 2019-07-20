@@ -15,6 +15,8 @@ const ContactItem = (props) => {
     console.log(item)
     return (
         <div className="cont-item-Contain">
+
+        
            <h1> Contact Name : {item.name} </h1>
            <h2> Contact age : {item.age} </h2>
            <h3> Contact email : {item.email} </h3>
@@ -24,7 +26,7 @@ const ContactItem = (props) => {
            </Link>
            <Link to='/'>
            <input type="button" value="Delete" onClick={()=>deleteContact(item._id)}/>
-            </Link>
+           </Link>
         </div>
     );
 };
